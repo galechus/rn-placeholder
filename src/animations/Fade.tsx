@@ -25,13 +25,13 @@ export const Fade: React.FC<FadeProps> = ({
         duration,
         isInteraction,
         toValue: END_VALUE,
-        useNativeDriver,
+        useNativeDriver: true,
       }),
       Animated.timing(animation.current, {
         duration,
         isInteraction,
         toValue: START_VALUE,
-        useNativeDriver,
+        useNativeDriver: true,
       }),
     ]).start((e) => {
       if (e.finished) {
